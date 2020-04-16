@@ -1,3 +1,7 @@
 body {
   margin: 0px;
 }
+hr {
+  border: 50px solid #ff8533;
+  border-radius: 5px;
+}

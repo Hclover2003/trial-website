@@ -22,6 +22,10 @@ window.addEventListener("mousemove", function (event) {
   console.log(mouse);
 });
 
+window.addEventListener("click", function (event) {
+  mouse.x = event.x;
+});
+
 window.addEventListener("resize", function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;

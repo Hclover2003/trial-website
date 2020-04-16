@@ -1,11 +1,150 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My Canvas</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="style.css">
+        <title>My Canvas</title>
+
     </head>
     <body>
+        <header>
+            <nav class="wrapper">
+                <div class="container">
+                    <a class="brand-logo">Hello!</a>
+                    <a href="" class="sidenav-trigger"
+                        data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Pomodoro</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li><a href="#Picture">Picture</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small
+                                yellow darken-3" data-tooltip="this is
+                                Instagram"><i class="fab
+                                    fa-instagram"></i></a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small
+                                yellow darken-3"><i class="fab
+                                    fa-facebook"></i></a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small
+                                yellow darken-3"><i class="fab
+                                    fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="sidenav pink lighten-2" id="mobile-menu">
+                        <li><a href="#">Pomodoro</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li><a href="#">Picture</a></li>
+
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
         <canvas></canvas>
-        <script src="canvas.js"></script>
+        <hr>
+        <section class="container-section scrollspy" id="Picture">
+            <div class="container">
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col s12 l6">
+                        <img src="images/desert.jpg" alt=""
+                            class="responsive-img
+                            materialBoxed">
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="card-panel">
+                            <h4 class="orange-text">A guide.</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Officiis veniam natus nam minus, quasi labore
+                            aspernatur
+                            quam quia recusandae soluta vitae sint fugiat, nisi
+                            reiciendis sapiente, possimus excepturi nemo enim.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/sunrise.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+
+        <section class="container section scrollspy" id="about">
+            <div class="container">
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col s12 l4">
+                        <div class="card-panel">
+                            <h3>About Us</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Rem nobis quisquam unde quo dolor a consequatur sed
+                            nemo
+                            eveniet? Necessitatibus aut error illum, odio
+                            suscipit
+                            veniam veritatis placeat optio aliquid.</p>
+                    </div>
+                    <div class="col s12 l6">
+                        <img src="images/desert.jpg" alt=""
+                            class="responsive-img
+                            materialBoxed">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer grey darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5>About Me</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Natus possimus harum beatae autem aliquid
+                            voluptatibus fugit impedit ad commodi blanditiis
+                            voluptatum, ipsum debitis libero quaerat quos
+                            tempora quod error enim!</p>
+                    </div>
+                    <div class="col s12 l4 offset-l2">
+                        <h5>Connect</h5>
+                        <ul>
+                            <li><a href="" class="grey-text text-lighten-3"></a>Facebook</li>
+                            <li><a href="" class="grey-text text-lighten-3"></a>Instagram</li>
+                            <li><a href="" class="grey-text text-lighten-3"></a>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+                <div class="container center-align">&copy; 2020 Clover</div>
+            </div>
+        </footer>
+
+        <script src="/js/canvas.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $(".materialBoxed").materialbox();
+                    $(".parallax").parallax();
+                    $(".sidenav").sidenav();
+                    $(".tooltipped").tooltip();
+                    $(".scrollspy").scrollSpy();
+                });
+            </script>
     </body>
 </html>
